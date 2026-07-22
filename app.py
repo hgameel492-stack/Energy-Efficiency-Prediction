@@ -19,7 +19,7 @@ st.set_page_config(
 # =========================
 # Load Machine Learning Model
 # =========================
-model = joblib.load("gradient_boosting_model.pkl")
+model = joblib.load("random_forest_model.pkl")
 
 # =========================
 # Custom CSS
@@ -100,7 +100,7 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.success("✔ Gradient Boosting Regressor")
+    st.success("✔ Random Forest Model")
 
     st.info("""
 This application predicts:
@@ -163,7 +163,7 @@ This application predicts:
 
 • ❄ Cooling Load
 
-using a trained Gradient Boosting Regressor Model.
+using a trained Random Forest Regression model.
 
 The goal is to help engineers design more energy-efficient buildings.
 """)
@@ -411,7 +411,7 @@ with tab2:
     st.write("""
 Algorithm Used:
 
-✅ Gradient Boosting Regressor
+✅ Random Forest Regressor
 
 Libraries:
 
